@@ -19,6 +19,16 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "PlayGifImage"
 ```
+```swift
+
+    //加载普通图片,但是放在images.xcassets里面的图片是加载不出来的
+    LoadGifImageTool.loadGifImage(imageView, "ting.jpeg")
+    //加载无限播放的gif图片
+    LoadGifImageTool.loadGifImage(lastImageView, "gif.jpg", true)
+
+```
+
+
 
 ## Author
 
