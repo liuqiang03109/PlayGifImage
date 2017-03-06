@@ -29,11 +29,13 @@ public class LoadGifImageTool {
         
         var images = [UIImage]()
         var totalDuration : TimeInterval = 0
+        
         for i in 0..<imageCount {
             //取出图片，放入数组中，准备播放
             guard let cgImage = CGImageSourceCreateImageAtIndex(imageSource, i, nil) else {
                 continue
             }
+            
             let image = UIImage(cgImage: cgImage)
             
             if i == 0 {
