@@ -19,6 +19,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "PlayGifImage"
 ```
+<<<<<<< HEAD
 
 ```swift
 
@@ -29,6 +30,8 @@ pod "PlayGifImage"
 
 ```
 
+=======
+>>>>>>> d252992f9991517c6902459343cf7f6e489e08dd
 ## Author
 
 wenhe-liu, liu.wen.he@chrjdt.com
