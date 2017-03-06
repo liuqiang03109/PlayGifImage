@@ -1,0 +1,6 @@
+framework module PlayGifImage {
+  umbrella header "PlayGifImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

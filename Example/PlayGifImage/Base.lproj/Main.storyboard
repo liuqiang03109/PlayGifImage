@@ -1,22 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PlayGifImage_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-Hd-Zym">
+                                <rect key="frame" x="67" y="120" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v9Y-VA-bHk">
+                                <rect key="frame" x="67" y="427" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ITb-Ck-xE1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="v9Y-VA-bHk" secondAttribute="trailing" constant="52" id="40M-OQ-UEj"/>
+                            <constraint firstItem="ei6-Hd-Zym" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4Hi-Vc-NEA"/>
+                            <constraint firstItem="v9Y-VA-bHk" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="EXO-hI-CCc"/>
+                            <constraint firstItem="v9Y-VA-bHk" firstAttribute="height" secondItem="ei6-Hd-Zym" secondAttribute="height" id="JB7-Nr-T9F"/>
+                            <constraint firstItem="v9Y-VA-bHk" firstAttribute="trailing" secondItem="ei6-Hd-Zym" secondAttribute="trailing" id="N57-IB-ebA"/>
+                            <constraint firstItem="v9Y-VA-bHk" firstAttribute="leading" secondItem="ei6-Hd-Zym" secondAttribute="leading" id="Q0r-zr-vQh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="v9Y-VA-bHk" secondAttribute="bottom" constant="112" id="k5r-h8-lCU"/>
+                            <constraint firstItem="ei6-Hd-Zym" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="nks-gX-OWT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="ei6-Hd-Zym" id="juz-Nz-WjH"/>
+                        <outlet property="lastImageView" destination="v9Y-VA-bHk" id="fMM-8I-VYe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

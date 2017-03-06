@@ -1,0 +1,6 @@
+framework module Pods_PlayGifImage_Example {
+  umbrella header "Pods-PlayGifImage_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

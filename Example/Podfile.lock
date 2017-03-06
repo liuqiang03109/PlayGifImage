@@ -1,0 +1,16 @@
+PODS:
+  - PlayGifImage (0.1.0)
+
+DEPENDENCIES:
+  - PlayGifImage (from `../`)
+
+EXTERNAL SOURCES:
+  PlayGifImage:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PlayGifImage: 3616f1fb326041d4015ba00890eafe975e4d6591
+
+PODFILE CHECKSUM: 44ef75eea0b08a1c85714993ccd30d653afe0a3a
+
+COCOAPODS: 1.2.0
