@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PlayGifImage_Example' do
+  pod 'PlayGifImage', :path => '../'
+
+  target 'PlayGifImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
