@@ -18,9 +18,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "PlayGifImage"
-```
-<<<<<<< HEAD
-
+``` 
 ```swift
 
     //加载普通图片,但是放在images.xcassets里面的图片是加载不出来的
@@ -29,9 +27,6 @@ pod "PlayGifImage"
     LoadGifImageTool.loadGifImage(lastImageView, "gif.jpg", true)
 
 ```
-
-=======
->>>>>>> d252992f9991517c6902459343cf7f6e489e08dd
 ## Author
 
 wenhe-liu, liu.wen.he@chrjdt.com
