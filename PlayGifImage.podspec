@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PlayGifImage'
   s.version          = '0.1.2'
-  s.summary          = 'A short description of PlayGifImage.'
+  s.summary          = 'PlayGifImage.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 一个播放gif图片的小demo，并且也可以显示图片
                        DESC
 
-  s.homepage         = 'https://github.com/wenhe-liu/PlayGifImage'
+  s.homepage         = 'https://github.com/liuqiang03109/PlayGifImage'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wenhe-liu' => 'liu.wen.he@chrjdt.com' }
