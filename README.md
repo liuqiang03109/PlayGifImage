@@ -22,6 +22,7 @@ pod "PlayGifImage"
 ```swift
 
     //加载普通图片,但是放在images.xcassets里面的图片是加载不出来的
+    //默认是无限循环的
     LoadGifImageTool.loadGifImage(imageView, "ting.jpeg")
     //加载无限播放的gif图片
     LoadGifImageTool.loadGifImage(lastImageView, "gif.jpg", true)
